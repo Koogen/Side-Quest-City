@@ -1,0 +1,1 @@
+INDEX VERSION 1.127+C:\Users\Owner\Documents\GitHub\Side-Quest-City\Side Quest City\.metadata\.plugins\org.eclipse.jdt.core
