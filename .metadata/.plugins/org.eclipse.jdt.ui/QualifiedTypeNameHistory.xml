@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="us.terracraft.sqc.objects.Player"/>
+<fullyQualifiedTypeName name="us.terracraft.sqc.npc.TestNPC"/>
+<fullyQualifiedTypeName name="us.terracraft.sqc.GameManager"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+</qualifiedTypeNameHistroy>

@@ -23,7 +23,7 @@ public class GameManager extends Game {
 		game.setWidth(1024 / 2);
 		game.setHeight(768 / 2);
 		
-		game.limitFramerate(true);
+		game.limitFramerate(false);
 		
 		game.debugFPS(true);
 		

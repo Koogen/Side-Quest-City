@@ -8,7 +8,7 @@ import KTech.core.Renderer;
 public abstract class GameObject {
 
 	protected int x, y, width, height;
-	protected String name = "null";
+	protected String name = "missingno";
 	protected boolean dead = false;
 	protected ArrayList<Component> components = new ArrayList<Component>();
 	

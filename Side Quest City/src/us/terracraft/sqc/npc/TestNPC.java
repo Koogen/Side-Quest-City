@@ -13,9 +13,6 @@ public class TestNPC extends GameObject {
 	Image Test = new Image("/characters/NPC.png");
 	
 	int x, y;
-	int generated, generated2;
-	Random random = new Random(100);
-	Random random2 = new Random(4);
 	
 	public TestNPC(int x, int y, String displayName) {
 		setName("TestNPC"); 
@@ -25,18 +22,14 @@ public class TestNPC extends GameObject {
 	
 	@Override
 	public void update(KTech kt, float time) {
-		generated = random.nextInt();
-		generated2 = random.nextInt();
-		if (generated > 80) {
-			if(generated2 > 2) {
-				y++;
-				x--;
-			} else {
-				y--;
-				x--;
-			}
+		if (y > 30) {
+			y--;
+		}
+		if (y == 30 && x > 30) {
+			x--;
 		}
 	}
+	
 
 	@Override
 	public void render(KTech kt, Renderer r) {

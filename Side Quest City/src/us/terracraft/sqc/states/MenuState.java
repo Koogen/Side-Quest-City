@@ -13,12 +13,14 @@ public class MenuState implements State {
 	private ObjectManager manager;
 	
 	Image title = new Image("/misc/sqc.png");
+	SoundClip song = new SoundClip("/sounds/theme.wav");
 	
 	public MenuState() {
 		manager = new ObjectManager();
 		
 		manager.addObject(new Background(0,0, "/Backgrounds/Menubg.png"));
 
+		song.loop();
 	}
 	
 	@Override

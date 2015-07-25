@@ -29,6 +29,15 @@ public class Player extends GameObject {
 			x -= 3;
 		if (kt.getInput().isKeyHeld(KeyEvent.VK_D))
 			x += 3;
+		
+		if (x < 0)
+			x = 0;
+		if (y < 0) 
+			y = 0;
+		if (x > 1024 / 2 - 32)
+			x = 1024 / 2 - 32;
+		if (y > 768 / 2 - 32)
+			y = 768 / 2 - 32;
 	}
 
 	@Override
