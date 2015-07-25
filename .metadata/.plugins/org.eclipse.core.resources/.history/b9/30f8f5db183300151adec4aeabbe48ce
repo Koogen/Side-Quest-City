@@ -1,0 +1,44 @@
+package us.terracraft.sqc.states;
+
+import java.awt.event.KeyEvent;
+
+import us.terracraft.sqc.Player;
+import us.terracraft.sqc.objects.Background;
+import KTech.components.*;
+import KTech.core.*;
+import KTech.graphics.*;
+
+public class PlayState implements State {
+	
+	private ObjectManager manager;
+	
+	public PlayState() {
+		manager = new ObjectManager();
+		
+		manager.addObject(new Background(0, 0, "/bg.jpg"));
+		
+		manager.addObject(new Player(2, 300 - 16));
+	}
+	
+	@Override
+	public void update(KTech kt, float time) {
+		manager.updateObjects(kt, time); //Do not edit or remove this line
+		
+		
+	}
+
+	@Override
+	public void render(KTech kt, Renderer r) {
+		manager.renderObjects(kt, r); //Do not edit or remove this line
+		
+		
+	}
+
+	@Override
+	public void dispose() {
+		//Make sure to dispose of all game objects to avoid memory leaks 
+
+		
+		manager.disposeObjects();
+	}
+}

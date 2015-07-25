@@ -1,0 +1,39 @@
+package us.terracraft.sqc.npc;
+
+import java.awt.event.KeyEvent;
+
+import KTech.components.*;
+import KTech.core.*;
+import KTech.core.*;
+import KTech.graphics.Image;
+
+public class Background extends GameObject {
+
+	Image background;
+	
+	public Background(int x, int y, String path) {
+		setName("Background");
+		background = new Image(path); 
+	}
+	
+	@Override
+	public void update(KTech kt, float time) {
+		
+	}
+
+	@Override
+	public void render(KTech kt, Renderer r) {
+		r.drawImage(background, 0, 0);
+	}
+
+	@Override
+	public void dispose() {
+		
+	}
+
+	@Override
+	public void componentEvent(String name, GameObject object) {
+		
+	}
+
+}

@@ -6,7 +6,7 @@ import KTech.components.State;
 
 public abstract class Game {
 	
-	private Stack<State> states = new Stack<State>();
+	private static Stack<State> states = new Stack<State>();
 
 	public abstract void update(KTech kt, float time);
 	public abstract void render(KTech kt, Renderer r);
@@ -24,7 +24,7 @@ public abstract class Game {
 		states.pop();
 	}
 	
-	public void setState(State state) {
+	public static void setState(State state) {
 		states.pop();
 		states.push(state);
 	}

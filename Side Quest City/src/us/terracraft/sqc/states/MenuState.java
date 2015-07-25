@@ -2,6 +2,7 @@ package us.terracraft.sqc.states;
 
 import java.awt.event.KeyEvent;
 
+import us.terracraft.sqc.GameManager;
 import us.terracraft.sqc.objects.Background;
 import KTech.components.*;
 import KTech.core.*;
@@ -24,7 +25,8 @@ public class MenuState implements State {
 	public void update(KTech kt, float time) {
 		manager.updateObjects(kt, time); //Do not edit or remove this line
 		
-		
+		if (kt.getInput().isKeyHeld(KeyEvent.VK_ENTER))
+			GameManager.setState(new PlayState());
 	}
 
 	@Override

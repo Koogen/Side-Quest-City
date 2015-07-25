@@ -2,8 +2,9 @@ package us.terracraft.sqc.states;
 
 import java.awt.event.KeyEvent;
 
-import us.terracraft.sqc.Player;
+import us.terracraft.sqc.npc.TestNPC;
 import us.terracraft.sqc.objects.Background;
+import us.terracraft.sqc.objects.Player;
 import KTech.components.*;
 import KTech.core.*;
 import KTech.graphics.*;
@@ -15,9 +16,9 @@ public class PlayState implements State {
 	public PlayState() {
 		manager = new ObjectManager();
 		
-		manager.addObject(new Background(0, 0, "/bg.jpg"));
+		manager.addObject(new Player(300, 300));
+		manager.addObject(new TestNPC(400, 200, "Bill"));
 		
-		manager.addObject(new Player(2, 300 - 16));
 	}
 	
 	@Override
