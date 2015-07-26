@@ -2,6 +2,8 @@ package us.terracraft.sqc.objects;
 
 import java.awt.event.KeyEvent;
 
+import us.terracraft.sqc.GameManager;
+import us.terracraft.sqc.states.Inventory;
 import KTech.components.*;
 import KTech.core.*;
 import KTech.core.*;
@@ -17,6 +19,8 @@ public class Player extends GameObject {
 		setName("Player"); 
 		this.x = x;
 		this.y = y;
+		
+		addComponent(new Collider());
 	}
 	
 	@Override
@@ -38,6 +42,11 @@ public class Player extends GameObject {
 			x = 1024 / 2 - 32;
 		if (y > 768 / 2 - 32)
 			y = 768 / 2 - 32;
+		
+		if (kt.getInput().isKeyPressed(KeyEvent.VK_E))
+			GameManager.setState(new Inventory());
+		
+		updateComponents(kt, time);
 	}
 
 	@Override

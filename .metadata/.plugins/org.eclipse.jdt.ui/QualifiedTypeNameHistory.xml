@@ -2,6 +2,10 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="us.terracraft.sqc.objects.Player"/>
 <fullyQualifiedTypeName name="us.terracraft.sqc.npc.TestNPC"/>
-<fullyQualifiedTypeName name="us.terracraft.sqc.GameManager"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="us.terracraft.sqc.states.Inventory"/>
+<fullyQualifiedTypeName name="us.terracraft.sqc.objects.Cursor"/>
+<fullyQualifiedTypeName name="us.terracraft.sqc.items.IronSword"/>
+<fullyQualifiedTypeName name="java.awt.event.KeyEvent"/>
+<fullyQualifiedTypeName name="us.terracraft.sqc.GameManager"/>
 </qualifiedTypeNameHistroy>

@@ -31,7 +31,8 @@ public class Collider extends Component {
 	}
 	
 	public void collision(GameObject object) {
-		object.componentEvent(name, object);
+		System.out.println("noot");
+		this.object.componentEvent(name, object);
 	}
 
 	public float getX() {
