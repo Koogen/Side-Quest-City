@@ -31,7 +31,7 @@ public class Collider extends Component {
 	}
 	
 	public void collision(GameObject object) {
-		
+		object.componentEvent(name, object);
 	}
 
 	public float getX() {
